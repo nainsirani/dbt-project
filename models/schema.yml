@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: DB_Connection
+    database: MYDB1
+    schema: MYSCHEMA1
+    tables:
+      - name: EMPLOYEES
+      - name: CUSTOMER
+      - name: ORDERS
+      - name: CUSTOMER_DATA
+      - name: TRANSACTION_DATA
