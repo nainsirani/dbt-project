@@ -17,5 +17,5 @@ clean-targets:
   - "dbt_packages"
 
 models:
-  dbt-project:
+  my_new_project:
     +materialized: table
