@@ -1,7 +1,7 @@
 {{
     config(
         materialized="view",
-        alias="emhemeral_view"
+        alias="emhemeral_view1"
     )
 }}
 

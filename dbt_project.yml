@@ -19,3 +19,6 @@ clean-targets:
 models:
   my_new_project:
     +materialized: table
+
+vars:
+  first_name: "'John'"
