@@ -1,7 +1,14 @@
 {{
     config(
         materialized='table',
-        alias='slv_customer'
+        alias='slv_customer',
+         pre_hook=[
+            "DELETE FROM audit_log where model_name='slv_customer'"
+        ],
+        post_hook=[
+             "INSERT INTO audit_log (model_name, status, run_time)
+             VALUES ('slv_customer','Started',CURRENT_TIMESTAMP())"
+        ]
     )
 }}
 
